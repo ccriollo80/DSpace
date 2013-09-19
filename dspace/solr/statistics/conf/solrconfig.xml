@@ -69,6 +69,21 @@
        other than the default ./data under the Solr home.
        If replication is in use, this should match the replication configuration. -->
   <!--<dataDir>${solr.data.dir:./solr/data}</dataDir>-->
+  
+  <!-- DSpace Technical advisor suggest us to force solr.NIOFSDirectoryFactory because of our repository size -->
+  <!-- The DirectoryFactory to use for indexes.
+
+		solr.StandardDirectoryFactory, the default, is filesystem
+		based and tries to pick the best implementation for the current
+		JVM and platform. One can force a particular implementation
+		via solr.MMapDirectoryFactory, solr.NIOFSDirectoryFactory, or
+		solr.SimpleFSDirectoryFactory.
+
+		solr.RAMDirectoryFactory is memory based, not
+		persistent, and doesn't work with replication.
+		-->
+  <directoryFactory name="DirectoryFactory"
+                    class="${solr.directoryFactory:solr.NIOFSDirectoryFactory}"/>
 
 
   <!-- WARNING: this <indexDefaults> section only provides defaults for index writers

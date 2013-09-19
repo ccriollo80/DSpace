@@ -87,6 +87,7 @@
   <!--<dataDir>${solr.data.dir:./solr/data}</dataDir>-->
 
 
+  <!-- DSpace Technical advisor suggest us to force solr.NIOFSDirectoryFactory because of our repository size --> 
   <!-- The DirectoryFactory to use for indexes.
 
        solr.StandardDirectoryFactory, the default, is filesystem
@@ -99,7 +100,7 @@
        persistent, and doesn't work with replication.
     -->
   <directoryFactory name="DirectoryFactory"
-                    class="${solr.directoryFactory:solr.StandardDirectoryFactory}"/>
+                    class="${solr.directoryFactory:solr.NIOFSDirectoryFactory}"/>
 
 
   <!-- Index Defaults
@@ -1140,33 +1141,33 @@
     <queryResponseWriter name="php" class="org.apache.solr.request.PHPResponseWriter"/>
     <queryResponseWriter name="phps" class="org.apache.solr.request.PHPSerializedResponseWriter"/>
 
-    <queryResponseWriter name="custom" class="com.example.MyResponseWriter"/>
-  -->
-
-  <!-- XSLT response writer transforms the XML output by any xslt file found
-       in Solr's conf/xslt directory.  Changes to xslt files are checked for
-       every xsltCacheLifetimeSeconds.
-   -->
-  <queryResponseWriter name="xslt" class="org.apache.solr.request.XSLTResponseWriter">
-    <int name="xsltCacheLifetimeSeconds">5</int>
-  </queryResponseWriter>
-
-
-  <!-- example of registering a query parser
-  <queryParser name="lucene" class="org.apache.solr.search.LuceneQParserPlugin"/>
-  -->
-
-  <!-- example of registering a custom function parser
-  <valueSourceParser name="myfunc" class="com.mycompany.MyValueSourceParser" />
-  -->
-
-  <!-- config for the admin interface -->
-  <admin>
-    <defaultQuery>*:*</defaultQuery>
-
-    <!-- configure a healthcheck file for servers behind a loadbalancer
-    <healthcheck type="file">server-enabled</healthcheck>
+      <queryResponseWriter name="custom" class="com.example.MyResponseWriter"/>
     -->
-  </admin>
+
+    <!-- XSLT response writer transforms the XML output by any xslt file found
+        in Solr's conf/xslt directory.  Changes to xslt files are checked for
+        every xsltCacheLifetimeSeconds.
+    -->
+    <queryResponseWriter name="xslt" class="org.apache.solr.request.XSLTResponseWriter">
+        <int name="xsltCacheLifetimeSeconds">5</int>
+    </queryResponseWriter>
+
+
+    <!-- example of registering a query parser
+    <queryParser name="lucene" class="org.apache.solr.search.LuceneQParserPlugin"/>
+    -->
+
+    <!-- example of registering a custom function parser
+    <valueSourceParser name="myfunc" class="com.mycompany.MyValueSourceParser" />
+    -->
+
+    <!-- config for the admin interface -->
+    <admin>
+        <defaultQuery>*:*</defaultQuery>
+
+        <!-- configure a healthcheck file for servers behind a loadbalancer
+        <healthcheck type="file">server-enabled</healthcheck>
+        -->
+    </admin>
 
 </config>
