@@ -15,7 +15,231 @@
 
     <form-map>
         <!--<name-map collection-handle="default" form-name="traditional" />-->
-        <name-map collection-handle="default" form-name="traditional" />
+        <name-map collection-handle="default" form-name="general" />
+        
+        <!-- Collections that apply the Jurnal and articles form -->
+        <name-map collection-handle="10906/3883" form-name="seriadas-art" />
+        <name-map collection-handle="10906/3892" form-name="seriadas-art" />
+        <name-map collection-handle="10906/3900" form-name="seriadas-art" />
+        <name-map collection-handle="10906/3901" form-name="seriadas-art" />
+        <name-map collection-handle="10906/3909" form-name="seriadas-art" />
+        <name-map collection-handle="10906/3938" form-name="seriadas-art" />
+        <name-map collection-handle="10906/3943" form-name="seriadas-art" />
+        <name-map collection-handle="10906/3982" form-name="seriadas-art" />
+        <name-map collection-handle="10906/4005" form-name="seriadas-art" />
+        <name-map collection-handle="10906/4014" form-name="seriadas-art" />
+        <name-map collection-handle="10906/4044" form-name="seriadas-art" />
+        <name-map collection-handle="10906/4086" form-name="seriadas-art" />
+        <name-map collection-handle="10906/4199" form-name="seriadas-art" />
+        <name-map collection-handle="10906/4214" form-name="seriadas-art" />
+        <name-map collection-handle="10906/4377" form-name="seriadas-art" />
+        <name-map collection-handle="10906/4571" form-name="seriadas-art" />
+        <name-map collection-handle="10906/4627" form-name="seriadas-art" />
+        <name-map collection-handle="10906/4643" form-name="seriadas-art" />
+        <name-map collection-handle="10906/5189" form-name="seriadas-art" />
+        <name-map collection-handle="10906/5263" form-name="seriadas-art" />
+        <name-map collection-handle="10906/5279" form-name="seriadas-art" />
+        <name-map collection-handle="10906/5299" form-name="seriadas-art" />
+        <name-map collection-handle="10906/5305" form-name="seriadas-art" />
+        <name-map collection-handle="10906/5324" form-name="seriadas-art" />
+        <name-map collection-handle="10906/5336" form-name="seriadas-art" />
+        <name-map collection-handle="10906/5566" form-name="seriadas-art" />
+        <name-map collection-handle="10906/5572" form-name="seriadas-art" />
+        <name-map collection-handle="10906/5591" form-name="seriadas-art" />
+        <name-map collection-handle="10906/5604" form-name="seriadas-art" />
+        <name-map collection-handle="10906/5652" form-name="seriadas-art" />
+        <name-map collection-handle="10906/64659" form-name="seriadas-art" />
+        <name-map collection-handle="10906/64943" form-name="seriadas-art" />
+        <name-map collection-handle="10906/65138" form-name="seriadas-art" />
+        <name-map collection-handle="10906/65358" form-name="seriadas-art" />
+        <name-map collection-handle="10906/65359" form-name="seriadas-art" />
+        <name-map collection-handle="10906/65360" form-name="seriadas-art" />
+        <name-map collection-handle="10906/65361" form-name="seriadas-art" />
+        <name-map collection-handle="10906/65375" form-name="seriadas-art" />
+        <name-map collection-handle="10906/65495" form-name="seriadas-art" />
+        <name-map collection-handle="10906/65991" form-name="seriadas-art" />
+        <name-map collection-handle="10906/66223" form-name="seriadas-art" />
+        <name-map collection-handle="10906/66287" form-name="seriadas-art" />
+        <name-map collection-handle="10906/67006" form-name="seriadas-art" />
+        <name-map collection-handle="10906/67930" form-name="seriadas-art" />
+        <name-map collection-handle="10906/67966" form-name="seriadas-art" />
+        <name-map collection-handle="10906/67968" form-name="seriadas-art" />
+        <name-map collection-handle="10906/67971" form-name="seriadas-art" />
+        <name-map collection-handle="10906/68100" form-name="seriadas-art" />
+        <name-map collection-handle="10906/68331" form-name="seriadas-art" />
+        <name-map collection-handle="10906/68514" form-name="seriadas-art" />
+        <name-map collection-handle="10906/68516" form-name="seriadas-art" />
+        <name-map collection-handle="10906/68517" form-name="seriadas-art" />
+        <name-map collection-handle="10906/68520" form-name="seriadas-art" />
+        <name-map collection-handle="10906/68559" form-name="seriadas-art" />
+        <name-map collection-handle="10906/68613" form-name="seriadas-art" />
+        <name-map collection-handle="10906/68614" form-name="seriadas-art" />
+        <name-map collection-handle="10906/68829" form-name="seriadas-art" />
+        <name-map collection-handle="10906/69544" form-name="seriadas-art" />
+
+        
+        <!-- Collections that apply the Thesis form -->
+        <name-map collection-handle="10906/2278" form-name="tesis" />
+        <name-map collection-handle="10906/2704" form-name="tesis" />
+        <name-map collection-handle="10906/3765" form-name="tesis" />
+        <name-map collection-handle="10906/3927" form-name="tesis" />
+        <name-map collection-handle="10906/5364" form-name="tesis" />
+        <name-map collection-handle="10906/5370" form-name="tesis" />
+        <name-map collection-handle="10906/5396" form-name="tesis" />
+        <name-map collection-handle="10906/5427" form-name="tesis" />
+        <name-map collection-handle="10906/5445" form-name="tesis" />
+        <name-map collection-handle="10906/5496" form-name="tesis" />
+        <name-map collection-handle="10906/5505" form-name="tesis" />
+        <name-map collection-handle="10906/5516" form-name="tesis" />
+        <name-map collection-handle="10906/5612" form-name="tesis" />
+        <name-map collection-handle="10906/5616" form-name="tesis" />
+        <name-map collection-handle="10906/66639" form-name="tesis" />
+        <name-map collection-handle="10906/67128" form-name="tesis" />
+        <name-map collection-handle="10906/67132" form-name="tesis" />
+        <name-map collection-handle="10906/67134" form-name="tesis" />
+        <name-map collection-handle="10906/67527" form-name="tesis" />
+        <name-map collection-handle="10906/67550" form-name="tesis" />
+        <name-map collection-handle="10906/67645" form-name="tesis" />
+        <name-map collection-handle="10906/67657" form-name="tesis" />
+        <name-map collection-handle="10906/67797" form-name="tesis" />
+        <name-map collection-handle="10906/67886" form-name="tesis" />
+        <name-map collection-handle="10906/66794" form-name="tesis" />
+        <name-map collection-handle="10906/66921" form-name="tesis" />
+        <name-map collection-handle="10906/66922" form-name="tesis" />
+        <name-map collection-handle="10906/66933" form-name="tesis" />
+        <name-map collection-handle="10906/68753" form-name="tesis" />
+        
+        <!-- Collections that apply the Historical form -->
+        <name-map collection-handle="10906/5701" form-name="historico" />
+        <name-map collection-handle="10906/5702" form-name="historico" />
+        <name-map collection-handle="10906/5703" form-name="historico" />
+        <name-map collection-handle="10906/5704" form-name="historico" />
+        <name-map collection-handle="10906/5705" form-name="historico" />
+        <name-map collection-handle="10906/5706" form-name="historico" />
+        <name-map collection-handle="10906/5707" form-name="historico" />
+        <name-map collection-handle="10906/5708" form-name="historico" />
+        <name-map collection-handle="10906/5709" form-name="historico" />
+        <name-map collection-handle="10906/5711" form-name="historico" />
+        <name-map collection-handle="10906/5712" form-name="historico" />
+        <name-map collection-handle="10906/5713" form-name="historico" />
+        <name-map collection-handle="10906/5714" form-name="historico" />
+        <name-map collection-handle="10906/5715" form-name="historico" />
+        <name-map collection-handle="10906/5716" form-name="historico" />
+        <name-map collection-handle="10906/5718" form-name="historico" />
+        <name-map collection-handle="10906/5719" form-name="historico" />
+        <name-map collection-handle="10906/5720" form-name="historico" />
+        <name-map collection-handle="10906/5721" form-name="historico" />
+        <name-map collection-handle="10906/5723" form-name="historico" />
+        <name-map collection-handle="10906/5724" form-name="historico" />
+        <name-map collection-handle="10906/5725" form-name="historico" />
+        <name-map collection-handle="10906/5726" form-name="historico" />
+        <name-map collection-handle="10906/5727" form-name="historico" />
+        <name-map collection-handle="10906/5728" form-name="historico" />
+        <name-map collection-handle="10906/5730" form-name="historico" />
+        <name-map collection-handle="10906/5731" form-name="historico" />
+        <name-map collection-handle="10906/5732" form-name="historico" />
+        <name-map collection-handle="10906/5733" form-name="historico" />
+        <name-map collection-handle="10906/5734" form-name="historico" />
+        <name-map collection-handle="10906/5735" form-name="historico" />
+        <name-map collection-handle="10906/5736" form-name="historico" />
+        <name-map collection-handle="10906/5737" form-name="historico" />
+        <name-map collection-handle="10906/5738" form-name="historico" />
+        <name-map collection-handle="10906/5739" form-name="historico" />
+        <name-map collection-handle="10906/5741" form-name="historico" />
+        <name-map collection-handle="10906/5742" form-name="historico" />
+        <name-map collection-handle="10906/5743" form-name="historico" />
+        <name-map collection-handle="10906/5744" form-name="historico" />
+        <name-map collection-handle="10906/5745" form-name="historico" />
+        <name-map collection-handle="10906/5747" form-name="historico" />
+        <name-map collection-handle="10906/5748" form-name="historico" />
+        <name-map collection-handle="10906/5749" form-name="historico" />
+        <name-map collection-handle="10906/5750" form-name="historico" />
+        <name-map collection-handle="10906/5751" form-name="historico" />
+        <name-map collection-handle="10906/5752" form-name="historico" />
+        <name-map collection-handle="10906/5754" form-name="historico" />
+        <name-map collection-handle="10906/5755" form-name="historico" />
+        <name-map collection-handle="10906/5756" form-name="historico" />
+        <name-map collection-handle="10906/5757" form-name="historico" />
+        <name-map collection-handle="10906/5758" form-name="historico" />
+        <name-map collection-handle="10906/5759" form-name="historico" />
+        <name-map collection-handle="10906/5761" form-name="historico" />
+        <name-map collection-handle="10906/5762" form-name="historico" />
+        <name-map collection-handle="10906/5763" form-name="historico" />
+        <name-map collection-handle="10906/5764" form-name="historico" />
+        <name-map collection-handle="10906/5765" form-name="historico" />
+        <name-map collection-handle="10906/5767" form-name="historico" />
+        <name-map collection-handle="10906/5768" form-name="historico" />
+        <name-map collection-handle="10906/5769" form-name="historico" />
+        <name-map collection-handle="10906/5771" form-name="historico" />
+        <name-map collection-handle="10906/5772" form-name="historico" />
+        <name-map collection-handle="10906/5773" form-name="historico" />
+        <name-map collection-handle="10906/5775" form-name="historico" />
+        <name-map collection-handle="10906/5777" form-name="historico" />
+        <name-map collection-handle="10906/5778" form-name="historico" />
+        <name-map collection-handle="10906/5779" form-name="historico" />
+        <name-map collection-handle="10906/5780" form-name="historico" />
+        <name-map collection-handle="10906/5781" form-name="historico" />
+        <name-map collection-handle="10906/5782" form-name="historico" />
+        <name-map collection-handle="10906/5783" form-name="historico" />
+        <name-map collection-handle="10906/5784" form-name="historico" />
+        <name-map collection-handle="10906/5785" form-name="historico" />
+        <name-map collection-handle="10906/5786" form-name="historico" />
+        <name-map collection-handle="10906/5787" form-name="historico" />
+        <name-map collection-handle="10906/5788" form-name="historico" />
+        <name-map collection-handle="10906/5789" form-name="historico" />
+        <name-map collection-handle="10906/5790" form-name="historico" />
+        <name-map collection-handle="10906/5791" form-name="historico" />
+        <name-map collection-handle="10906/5792" form-name="historico" />
+        <name-map collection-handle="10906/5793" form-name="historico" />
+        <name-map collection-handle="10906/5794" form-name="historico" />
+        <name-map collection-handle="10906/5795" form-name="historico" />
+        <name-map collection-handle="10906/5796" form-name="historico" />
+        <name-map collection-handle="10906/5797" form-name="historico" />
+        <name-map collection-handle="10906/5798" form-name="historico" />
+        <name-map collection-handle="10906/5799" form-name="historico" />
+        <name-map collection-handle="10906/5800" form-name="historico" />
+        <name-map collection-handle="10906/5801" form-name="historico" />
+        <name-map collection-handle="10906/5802" form-name="historico" />
+        <name-map collection-handle="10906/5803" form-name="historico" />
+        <name-map collection-handle="10906/5804" form-name="historico" />
+        <name-map collection-handle="10906/5805" form-name="historico" />
+        <name-map collection-handle="10906/64623" form-name="historico" />
+        <name-map collection-handle="10906/65286" form-name="historico" />
+        <name-map collection-handle="10906/65288" form-name="historico" />
+        <name-map collection-handle="10906/65432" form-name="historico" />
+        <name-map collection-handle="10906/65433" form-name="historico" />
+        <name-map collection-handle="10906/65434" form-name="historico" />
+        <name-map collection-handle="10906/65435" form-name="historico" />
+        <name-map collection-handle="10906/65436" form-name="historico" />
+        <name-map collection-handle="10906/65437" form-name="historico" />
+        <name-map collection-handle="10906/65438" form-name="historico" />
+        <name-map collection-handle="10906/65439" form-name="historico" />
+        <name-map collection-handle="10906/65440" form-name="historico" />
+        <name-map collection-handle="10906/65441" form-name="historico" />
+        <name-map collection-handle="10906/65442" form-name="historico" />
+        <name-map collection-handle="10906/65443" form-name="historico" />
+        <name-map collection-handle="10906/65445" form-name="historico" />
+        <name-map collection-handle="10906/65447" form-name="historico" />
+        <name-map collection-handle="10906/65449" form-name="historico" />
+        <name-map collection-handle="10906/65451" form-name="historico" />
+        <name-map collection-handle="10906/65453" form-name="historico" />
+        <name-map collection-handle="10906/65454" form-name="historico" />
+        <name-map collection-handle="10906/65455" form-name="historico" />
+        <name-map collection-handle="10906/65456" form-name="historico" />
+
+        <!-- Collections that apply the Audiovisual form -->
+        <name-map collection-handle="10906/2702" form-name="audiovisual" />
+        <name-map collection-handle="10906/5221" form-name="audiovisual" />
+        <name-map collection-handle="10906/65290" form-name="audiovisual" />
+        <name-map collection-handle="10906/67811" form-name="audiovisual" />
+        <name-map collection-handle="10906/68643" form-name="audiovisual" />
+        <name-map collection-handle="10906/68743" form-name="audiovisual" />
+        <name-map collection-handle="10906/68768" form-name="audiovisual" />
+        <name-map collection-handle="10906/68776" form-name="audiovisual" />
+        <name-map collection-handle="10906/68008" form-name="audiovisual" />
+        <name-map collection-handle="10906/68009" form-name="audiovisual" />
+        <name-map collection-handle="10906/68010" form-name="audiovisual" />
+
     </form-map>
 
 
@@ -102,7 +326,7 @@
                     <label>Tipo (BDCOL)*</label>
                     <input-type value-pairs-name="common_types">dropdown</input-type>
                     <hint> Seleccione el(los) tipo(s) de contenido del ítem. Para seleccionar más de un tipo, mantenga presionada 
-                       la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
+                        la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
                     </hint>
                     <required>Debe Ingresar el tipo de item que va a registrar</required>
                 </field>
@@ -115,7 +339,7 @@
                     <label>Tipo (Español)*</label>
                     <input-type value-pairs-name="common_types_spa">dropdown</input-type>
                     <hint> Seleccione el(los) tipo(s) de contenido del ítem. Para seleccionar más de un tipo, mantenga presionada 
-                       la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
+                        la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
                     </hint>
                     <required>Debe Ingresar el tipo de item que va a registrar</required>
                 </field>
@@ -297,7 +521,7 @@
                     <label>Idioma</label>
                     <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
                     <hint>Seleccione el lenguaje del contenido principal del ítem. Si el idioma no aparece en la lista, 
-                   por favor seleccione 'Otro'. Si el contenido no tiene un idioma (por ejemplo si es una imagen) seleccione 'N/A'.
+                        por favor seleccione 'Otro'. Si el contenido no tiene un idioma (por ejemplo si es una imagen) seleccione 'N/A'.
                     </hint>
                     <required>Debe seleccionar el lenguaje del ítem</required>
                 </field>
@@ -506,7 +730,7 @@
                     <label>Tipo (BDCOL)*</label>
                     <input-type value-pairs-name="common_types">dropdown</input-type>
                     <hint> Seleccione el(los) tipo(s) de contenido del ítem. Para seleccionar más de un tipo, mantenga presionada 
-                       la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
+                        la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
                     </hint>
                     <required>Debe Ingresar el tipo de item que va a registrar</required>
                 </field>
@@ -519,7 +743,7 @@
                     <label>Tipo (Español)*</label>
                     <input-type value-pairs-name="common_types_spa">dropdown</input-type>
                     <hint> Seleccione el(los) tipo(s) de contenido del ítem. Para seleccionar más de un tipo, mantenga presionada 
-                       la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
+                        la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
                     </hint>
                     <required>Debe Ingresar el tipo de item que va a registrar</required>
                 </field>
@@ -701,7 +925,7 @@
                     <label>Idioma</label>
                     <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
                     <hint>Seleccione el lenguaje del contenido principal del ítem. Si el idioma no aparece en la lista, 
-                   por favor seleccione 'Otro'. Si el contenido no tiene un idioma (por ejemplo si es una imagen) seleccione 'N/A'.
+                        por favor seleccione 'Otro'. Si el contenido no tiene un idioma (por ejemplo si es una imagen) seleccione 'N/A'.
                     </hint>
                     <required>Debe seleccionar el lenguaje del ítem</required>
                 </field>
@@ -886,7 +1110,7 @@
                     <label>Tipo (BDCOL)*</label>
                     <input-type value-pairs-name="common_types">dropdown</input-type>
                     <hint> Seleccione el(los) tipo(s) de contenido del ítem. Para seleccionar más de un tipo, mantenga presionada 
-                       la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
+                        la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
                     </hint>
                     <required>Debe Ingresar el tipo de item que va a registrar</required>
                 </field>
@@ -899,7 +1123,7 @@
                     <label>Tipo (Español)*</label>
                     <input-type value-pairs-name="common_types_spa">dropdown</input-type>
                     <hint> Seleccione el(los) tipo(s) de contenido del ítem. Para seleccionar más de un tipo, mantenga presionada 
-                       la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
+                        la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
                     </hint>
                     <required>Debe Ingresar el tipo de item que va a registrar</required>
                 </field>
@@ -1059,7 +1283,7 @@
                     <label>Idioma</label>
                     <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
                     <hint>Seleccione el lenguaje del contenido principal del ítem. Si el idioma no aparece en la lista, 
-                   por favor seleccione 'Otro'. Si el contenido no tiene un idioma (por ejemplo si es una imagen) seleccione 'N/A'.
+                        por favor seleccione 'Otro'. Si el contenido no tiene un idioma (por ejemplo si es una imagen) seleccione 'N/A'.
                     </hint>
                     <required>Debe seleccionar el lenguaje del ítem</required>
                 </field>
@@ -1246,7 +1470,7 @@
                     <label>Tipo (BDCOL)*</label>
                     <input-type value-pairs-name="common_types">dropdown</input-type>
                     <hint> Seleccione el(los) tipo(s) de contenido del ítem. Para seleccionar más de un tipo, mantenga presionada 
-                       la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
+                        la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
                     </hint>
                     <required>Debe Ingresar el tipo de item que va a registrar</required>
                 </field>
@@ -1259,7 +1483,7 @@
                     <label>Tipo (Español)*</label>
                     <input-type value-pairs-name="common_types_spa">dropdown</input-type>
                     <hint> Seleccione el(los) tipo(s) de contenido del ítem. Para seleccionar más de un tipo, mantenga presionada 
-                       la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
+                        la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
                     </hint>
                     <required>Debe Ingresar el tipo de item que va a registrar</required>
                 </field>
@@ -1419,7 +1643,7 @@
                     <label>Idioma</label>
                     <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
                     <hint>Seleccione el lenguaje del contenido principal del ítem. Si el idioma no aparece en la lista, 
-                   por favor seleccione 'Otro'. Si el contenido no tiene un idioma (por ejemplo si es una imagen) seleccione 'N/A'.
+                        por favor seleccione 'Otro'. Si el contenido no tiene un idioma (por ejemplo si es una imagen) seleccione 'N/A'.
                     </hint>
                     <required>Debe seleccionar el lenguaje del ítem</required>
                 </field>
@@ -1628,7 +1852,7 @@
                     <label>Tipo (BDCOL)*</label>
                     <input-type value-pairs-name="common_types">dropdown</input-type>
                     <hint> Seleccione el(los) tipo(s) de contenido del ítem. Para seleccionar más de un tipo, mantenga presionada 
-                       la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
+                        la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
                     </hint>
                     <required>Debe Ingresar el tipo de item que va a registrar</required>
                 </field>
@@ -1641,7 +1865,7 @@
                     <label>Tipo (Español)*</label>
                     <input-type value-pairs-name="common_types_spa">dropdown</input-type>
                     <hint> Seleccione el(los) tipo(s) de contenido del ítem. Para seleccionar más de un tipo, mantenga presionada 
-                       la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
+                        la tecla "CTRL" o "Shift" mientras selecciona los tipos con el ratón.
                     </hint>
                     <required>Debe Ingresar el tipo de item que va a registrar</required>
                 </field>
@@ -1768,7 +1992,7 @@
                     <label>Idioma</label>
                     <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
                     <hint>Seleccione el lenguaje del contenido principal del ítem. Si el idioma no aparece en la lista, 
-                   por favor seleccione 'Otro'. Si el contenido no tiene un idioma (por ejemplo si es una imagen) seleccione 'N/A'.
+                        por favor seleccione 'Otro'. Si el contenido no tiene un idioma (por ejemplo si es una imagen) seleccione 'N/A'.
                     </hint>
                     <required>Debe seleccionar el lenguaje del ítem</required>
                 </field>
