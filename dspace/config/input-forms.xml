@@ -126,7 +126,7 @@
                     <dc-qualifier>accessRights</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Acceso *</label>
-                    <input-type value-pairs-name="common_acces_types">dropdown</input-type>
+                    <input-type value-pairs-name="common_access_types">dropdown</input-type>
                     <hint> Ingrese la información de acceso. </hint>
                     <required>Debe Ingresar la información de acceso.</required>
                 </field>
@@ -530,7 +530,7 @@
                     <dc-qualifier>accessRights</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Acceso *</label>
-                    <input-type value-pairs-name="common_acces_types">dropdown</input-type>
+                    <input-type value-pairs-name="common_access_types">dropdown</input-type>
                     <hint> Ingrese la información de acceso. </hint>
                     <required>Debe Ingresar la información de acceso.</required>
                 </field>
@@ -910,7 +910,7 @@
                     <dc-qualifier>accessRights</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Acceso *</label>
-                    <input-type value-pairs-name="common_acces_types">dropdown</input-type>
+                    <input-type value-pairs-name="common_access_types">dropdown</input-type>
                     <hint> Ingrese la información de acceso. </hint>
                     <required>Debe Ingresar la información de acceso.</required>
                 </field>
@@ -1270,7 +1270,7 @@
                     <dc-qualifier>accessRights</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Acceso *</label>
-                    <input-type value-pairs-name="common_acces_types">dropdown</input-type>
+                    <input-type value-pairs-name="common_access_types">dropdown</input-type>
                     <hint> Ingrese la información de acceso. </hint>
                     <required>Debe Ingresar la información de acceso.</required>
                 </field>
@@ -1652,7 +1652,7 @@
                     <dc-qualifier>accessRights</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Acceso *</label>
-                    <input-type value-pairs-name="common_acces_types">dropdown</input-type>
+                    <input-type value-pairs-name="common_access_types">dropdown</input-type>
                     <hint> Ingrese la información de acceso. </hint>
                     <required>Debe Ingresar la información de acceso.</required>
                 </field>
@@ -1950,33 +1950,51 @@
     <!-- stores the associated stored-values in the database.                  -->
 
     <form-value-pairs>
+        <!-- Possible identifier types -->
         <value-pairs value-pairs-name="common_identifiers" dc-term="identifier">
             <pair>
-                <displayed-value>ISSN</displayed-value>
-                <stored-value>issn</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Other</displayed-value>
-                <stored-value>other</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>ISMN</displayed-value>
-                <stored-value>ismn</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Gov't Doc #</displayed-value>
+                <displayed-value>Documento Gubernamental #</displayed-value>
                 <stored-value>govdoc</stored-value>
             </pair>
             <pair>
-                <displayed-value>URI</displayed-value>
-                <stored-value>uri</stored-value>
+                <displayed-value>DOI</displayed-value>
+                <stored-value>doi</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Identificador OLIB</displayed-value>
+                <stored-value>OLIB</stored-value>
             </pair>
             <pair>
                 <displayed-value>ISBN</displayed-value>
                 <stored-value>isbn</stored-value>
             </pair>
+            <pair>
+                <displayed-value>ISMN</displayed-value>
+                <stored-value>ismn</stored-value>
+            </pair> 
+            <pair>
+                <displayed-value>ISSN</displayed-value>
+                <stored-value>issn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>SICI</displayed-value>
+                <stored-value>sici</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>SLUG</displayed-value>
+                <stored-value>slug</stored-value>
+            </pair>     
+            <pair>
+                <displayed-value>URI</displayed-value>
+                <stored-value>uri</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Otro</displayed-value>
+                <stored-value>other</stored-value>
+            </pair>
         </value-pairs>
 
+        <!-- type possible values -->
         <value-pairs value-pairs-name="common_types" dc-term="type">
             <pair>
                 <displayed-value>Anotación jurisprudencial</displayed-value>
@@ -2096,6 +2114,7 @@
             </pair>
         </value-pairs>
         
+        <!-- type.spa possible values -->
         <value-pairs value-pairs-name="common_types_spa" dc-term="type.spa">
             <pair>
                 <displayed-value>Anotación jurisprudencial</displayed-value>
@@ -2211,7 +2230,7 @@
             </pair>     
             <pair>
                 <displayed-value>Otro</displayed-value>
-                <stored-value>other</stored-value>
+                <stored-value>Otro</stored-value>
             </pair>
         </value-pairs>
 
@@ -2258,6 +2277,119 @@
                 <displayed-value>(Otro)</displayed-value>
                 <stored-value>other</stored-value>
             </pair>
+        </value-pairs>
+        
+        <!-- rights.accessRights possible values -->
+        <value-pairs value-pairs-name="common_access_types" dc-term="rights.accessRights">
+            <pair>
+                <displayed-value>Acceso Abierto</displayed-value>
+                <stored-value>openAccess</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Restringido</displayed-value>
+                <stored-value>RestrictedAccess</stored-value>
+            </pair> 
+            <pair>
+                <displayed-value>Embargo</displayed-value>
+                <stored-value>embargoedAccess</stored-value>
+            </pair> 
+            <pair>
+                <displayed-value>Cerrado</displayed-value>
+                <stored-value>ClosedAccess</stored-value>
+            </pair> 
+        </value-pairs>
+        
+        <!-- relation.hasversion possible values -->
+        <value-pairs value-pairs-name="common_relation_versions" dc-term="relation.hasversion">
+            <pair>
+                <displayed-value>Trabajo en curso</displayed-value>
+                <stored-value>draft</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Enviado a una revista para revisión por pares</displayed-value>
+                <stored-value>submittedVersion</stored-value>
+            </pair> 
+            <pair>
+                <displayed-value>Aceptada para publicación</displayed-value>
+                <stored-value>acceptedVersion</stored-value>
+            </pair> 
+            <pair>
+                <displayed-value>Publicada</displayed-value>
+                <stored-value>publishedVersion</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Actualizada desde la publicación</displayed-value>
+                <stored-value>updatedVersion</stored-value>
+            </pair>            
+        </value-pairs>
+        
+        <!-- Possible relations -->
+        <value-pairs value-pairs-name="common_relations" dc-term="relation">
+            <pair>
+                <displayed-value>Basado en</displayed-value>
+                <stored-value>isbasedon</stored-value>
+            </pair> 
+            <pair>
+                <displayed-value>Es formato de</displayed-value>
+                <stored-value>isformatof</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Es parte de</displayed-value>
+                <stored-value>ispartof</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Es referenciado por</displayed-value>
+                <stored-value>isreferencedby</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fue reemplzado por</displayed-value>
+                <stored-value>isreplacedby</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Es versión de </displayed-value>
+                <stored-value>isversionof</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Reemplaza a</displayed-value>
+                <stored-value>replaces</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Requiere</displayed-value>
+                <stored-value>requires</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Tiene parte de</displayed-value>
+                <stored-value>haspart</stored-value>
+            </pair> 
+            <pair>
+                <displayed-value>URL</displayed-value>
+                <stored-value>uri</stored-value>
+            </pair>
+        </value-pairs>
+        
+        <!-- Possible publisher.faculty values-->
+        <value-pairs value-pairs-name="common_faculties" dc-term="relation">
+            <pair>
+                <displayed-value>Facultad de Ciencias Administrativas y Económicas</displayed-value>
+                <stored-value>Facultad de Ciencias Administrativas y Económicas</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Facultad de Ingeniería</displayed-value>
+                <stored-value>Facultad de Ingeniería</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Facultad de Derecho y Ciencias Sociales</displayed-value>
+                <stored-value>Facultad de Derecho y Ciencias Sociales</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Facultad de Ciencias Naturales</displayed-value>
+                <stored-value>Facultad de Ciencias Naturales</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Facultad de Ciencias de la Salud</displayed-value>
+                <stored-value>Facultad de Ciencias de la Salud</stored-value>
+            </pair>
+            
         </value-pairs>
 
     </form-value-pairs>
