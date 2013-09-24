@@ -27,3 +27,4 @@ META-INF/
 !/build.properties
 !/localdev.properties
 !/test.properties
+!/prodtest.properties
