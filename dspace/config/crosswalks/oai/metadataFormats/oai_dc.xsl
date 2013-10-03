@@ -29,6 +29,10 @@
 			<xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='contributor']/doc:element[@name='author']/doc:element/doc:field[@name='value']">
 				<dc:creator><xsl:value-of select="." /></dc:creator>
 			</xsl:for-each>
+                        <!-- Adding contributor.author by creator-->
+                        <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='creator']/doc:element/doc:field[@name='value']">
+				<dc:creator><xsl:value-of select="." /></dc:creator>
+			</xsl:for-each>
 			<xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='contributor']/doc:element[@name!='author']/doc:element/doc:field[@name='value']">
 				<dc:contributor><xsl:value-of select="." /></dc:contributor>
 			</xsl:for-each>
@@ -65,14 +69,15 @@
 			<xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='rights']/doc:element/doc:field[@name='value']">
 				<dc:rights><xsl:value-of select="." /></dc:rights>
 			</xsl:for-each>
-			<xsl:for-each select="doc:metadata/doc:element[@name='bitstreams']/doc:element[@name='bitstream']/doc:field[@name='format']">
+			<xsl:for-each select="doc:metadata/doc:element[@name='bundles']/doc:element[@name='bundle']/doc:element[@name='bitstreams']/doc:element[@name='bitstream']/doc:field[@name='format']">
 				<dc:format><xsl:value-of select="." /></dc:format>
 			</xsl:for-each>
-			<xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='covarage']/doc:element/doc:field[@name='value']">
-				<dc:covarage><xsl:value-of select="." /></dc:covarage>
+                        <!-- Fixing covarage for coverage -->
+			<xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='coverage']/doc:element/doc:field[@name='value']">
+				<dc:coverage><xsl:value-of select="." /></dc:coverage>
 			</xsl:for-each>
-			<xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='covarage']/doc:element/doc:element/doc:field[@name='value']">
-				<dc:covarage><xsl:value-of select="." /></dc:covarage>
+			<xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='coverage']/doc:element/doc:element/doc:field[@name='value']">
+				<dc:coverage><xsl:value-of select="." /></dc:coverage>
 			</xsl:for-each>
 			<xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='publisher']/doc:element/doc:field[@name='value']">
 				<dc:publisher><xsl:value-of select="." /></dc:publisher>
@@ -85,6 +90,18 @@
 			</xsl:for-each>
 			<xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='source']/doc:element/doc:element/doc:field[@name='value']">
 				<dc:source><xsl:value-of select="." /></dc:source>
+			</xsl:for-each>
+                        <!-- Adding audience -->
+                        <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='audience']/doc:element/doc:field[@name='value']">
+				<dc:audience><xsl:value-of select="." /></dc:audience>
+			</xsl:for-each>
+                        <!-- Adding pubplace -->
+                        <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='pubplace']/doc:element/doc:field[@name='value']">
+				<dc:pubplace><xsl:value-of select="." /></dc:pubplace>
+			</xsl:for-each>
+                        <!-- Adding citation -->
+                        <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='citation']/doc:element/doc:field[@name='value']">
+				<dc:citation><xsl:value-of select="." /></dc:citation>
 			</xsl:for-each>
 		</oai_dc:dc>
 	</xsl:template>
