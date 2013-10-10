@@ -218,7 +218,6 @@ public class XOAICacheManager
                 ByteArrayOutputStream intermediate = new ByteArrayOutputStream();
                 dataProvider.handle(parameters, intermediate);
                 String xoaiResponse = intermediate.toString();
-
                 // Cutting the header (to allow one to change the response time)
                 String end = "</responseDate>";
                 int pos = xoaiResponse.indexOf(end);

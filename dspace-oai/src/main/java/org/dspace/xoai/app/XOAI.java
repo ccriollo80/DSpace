@@ -304,6 +304,7 @@ public class XOAI
         
             ByteArrayOutputStream out = new ByteArrayOutputStream();
             MarshallingUtils.writeMetadata(out, ItemUtils.retrieveMetadata(item));
+            log.debug("Metadata to write in SOLR:"+ out.toString());
             doc.addField("item.compile", out.toString());
 
         if (_verbose)
