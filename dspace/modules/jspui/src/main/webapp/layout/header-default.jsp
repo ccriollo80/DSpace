@@ -9,7 +9,7 @@
 --%>
 <%--
   - HTML header for main home page
-  --%>
+--%>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
@@ -49,14 +49,14 @@
         <title><%= siteName %>: <%= title %></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="Generator" content="<%= generator %>" />
-        
+
         <!-- including meta tag for mobile compatibility -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <!-- including bootstrap css bootstrap files-->
         <!-- TODO: Now we are using the compiled version it must be changed to the source one and then compiled with less or recess -->
-        <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrapt/bootstrap.min.css"  media="screen">
-        
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css"  media="screen">
+
         <!-- Default DSpace css stuff -->
         <!-- TODO: Delete when necesary-->
         <link rel="stylesheet" href="<%= request.getContextPath() %>/styles.css" type="text/css" />
@@ -64,64 +64,67 @@
         <link rel="shortcut icon" href="<%= request.getContextPath() %>/favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" href="<%= request.getContextPath() %>/css/discovery.css" type="text/css" />
         <!-- updated version and theme of jquery-ui-->
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/jquery-ui-1.10.3.custom/ui-lightness/jquery-ui-1.10.3.custom.css" type="text/css" />
-        
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/jquery-ui-1.10.3.custom/ui-lightness/jquery-ui-1.10.3.custom.css" type="text/css" />
+
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
         <script src="<%= request.getContextPath() %>/static/js/html5shiv.js"></script>
         <script src="<%= request.getContextPath() %>/static/js/respond.min.js"></script>
         <![endif]-->
-<%
-    if (!"NONE".equals(feedRef))
-    {
-        for (int i = 0; i < parts.size(); i+= 3)
-        {
-%>
+        <%
+            if (!"NONE".equals(feedRef))
+            {
+                for (int i = 0; i < parts.size(); i+= 3)
+                {
+        %>
         <link rel="alternate" type="application/<%= (String)parts.get(i) %>" title="<%= (String)parts.get(i+1) %>" href="<%= request.getContextPath() %>/feed/<%= (String)parts.get(i+2) %>/<%= feedRef %>"/>
-<%
-        }
-    }
+        <%
+                }
+            }
     
-    if (osLink)
-    {
-%>
+            if (osLink)
+            {
+        %>
         <link rel="search" type="application/opensearchdescription+xml" href="<%= request.getContextPath() %>/<%= osCtx %>description.xml" title="<%= osName %>"/>
-<%
-    }
+        <%
+            }
 
-    if (extraHeadData != null)
-        { %>
-<%= extraHeadData %>
-<%
-        }
-%>
-    <!-- All scripts were sent to the end of body -->    
-    
+            if (extraHeadData != null)
+                { %>
+        <%= extraHeadData %>
+        <%
+                }
+        %>
+        <!-- All scripts were sent to the end of body -->    
 
-    <%--Gooogle Analytics recording.--%>
-    <%
-    if (analyticsKey != null && analyticsKey.length() > 0)
-    {
-    %>
+
+        <%--Gooogle Analytics recording.--%>
+        <%
+        if (analyticsKey != null && analyticsKey.length() > 0)
+        {
+        %>
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', '<%= analyticsKey %>']);
             _gaq.push(['_trackPageview']);
 
             (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
             })();
         </script>
-    <%
-    }
-    if (extraHeadDataLast != null)
-    { %>
-		<%= extraHeadDataLast %>
-		<%
-		    }
-    %>
+        <%
+        }
+        if (extraHeadDataLast != null)
+        { %>
+        <%= extraHeadDataLast %>
+        <%
+            }
+        %>
 
     </head>
 
@@ -131,61 +134,79 @@
 
         <%-- DSpace top-of-page banner --%>
         <%-- HACK: width, border, cellspacing, cellpadding: for non-CSS compliant Netscape, Mozilla browsers --%>
-        <table class="pageBanner" width="100%" border="0" cellpadding="0" cellspacing="0">
+
+        <header>
+            <div class="btn-group pull-right">
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span></button>
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-align-justify"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Dropdown link</a></li>
+                        <li><a href="#">Dropdown link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="pageBanner">
 
             <%-- DSpace logo --%>
-            <tr>
-                <td>
-                    <a href="<%= request.getContextPath() %>/"><img src="<%= request.getContextPath() %>/image/dspace-blue.gif" alt="<fmt:message key="jsp.layout.header-default.alt"/>" width="198" height="79" border="0"/></a></td>
-                    <td class="tagLine" width="99%"> <%-- Make as wide as possible. cellpadding repeated for broken NS 4.x --%>
+            <div>
+                <div>
+                    <a href="<%= request.getContextPath() %>/"><img src="<%= request.getContextPath() %>/image/dspace-blue.gif" alt="<fmt:message key="jsp.layout.header-default.alt"/>" width="198" height="79" border="0"/></a>
+                </div>
+                <div class="tagLine"> <%-- Make as wide as possible. cellpadding repeated for broken NS 4.x --%>
                     <a class="tagLineText" target="_blank" href="http://www.dspace.org/"><fmt:message key="jsp.layout.header-default.about"/></a>
-                </td>
-                <td nowrap="nowrap" valign="middle">
-                </td>
-            </tr>
-            <tr class="stripe"> <%-- Blue stripe --%>
-                <td colspan="3">&nbsp;</td>
-            </tr>
-        </table>
+                </div>
+                <div>
+                </div>
+            </div>
+            <div class="stripe"> <%-- Blue stripe --%>
+                <div>&nbsp;</div>
+            </div>
+        </div>
 
         <%-- Localization --%>
-<%--  <c:if test="${param.locale != null}">--%>
-<%--   <fmt:setLocale value="${param.locale}" scope="session" /> --%>
-<%-- </c:if> --%>
-<%--        <fmt:setBundle basename="Messages" scope="session"/> --%>
+        <%--  <c:if test="${param.locale != null}">--%>
+        <%--   <fmt:setLocale value="${param.locale}" scope="session" /> --%>
+        <%-- </c:if> --%>
+        <%--        <fmt:setBundle basename="Messages" scope="session"/> --%>
 
         <%-- Page contents --%>
 
         <%-- HACK: width, border, cellspacing, cellpadding: for non-CSS compliant Netscape, Mozilla browsers --%>
-        <table class="centralPane" width="99%" border="0" cellpadding="3" cellspacing="1">
+        <div class="centralPane">
 
             <%-- HACK: valign: for non-CSS compliant Netscape browser --%>
-            <tr valign="top">
+            <div valign="top">
 
-            <%-- Navigation bar --%>
-<%
-    if (!navbar.equals("off"))
-    {
-%>
-            <td class="navigationBar">
-                <dspace:include page="<%= navbar %>" />
-            </td>
-<%
-    }
-%>
-            <%-- Page Content --%>
+                <%-- Navigation bar --%>
+                <%
+                    if (!navbar.equals("off"))
+                    {
+                %>
+                <div class="navigationBar">
+                    <dspace:include page="<%= navbar %>" />
+                </div>
+                <%
+                    }
+                %>
+                <%-- Page Content --%>
 
-            <%-- HACK: width specified here for non-CSS compliant Netscape 4.x --%>
-            <%-- HACK: Width shouldn't really be 100%, but omitting this means --%>
-            <%--       navigation bar gets far too wide on certain pages --%>
-            <td class="pageContents" width="100%">
+                <%-- HACK: width specified here for non-CSS compliant Netscape 4.x --%>
+                <%-- HACK: Width shouldn't really be 100%, but omitting this means --%>
+                <%--       navigation bar gets far too wide on certain pages --%>
+                <div class="pageContents" width="100%">
 
-                <%-- Location bar --%>
-<%
-    if (locbar)
-    {
-%>
-                <dspace:include page="/layout/location-bar.jsp" />
-<%
-    }
-%>
+                    <%-- Location bar --%>
+                    <%
+                        if (locbar)
+                        {
+                    %>
+                    <dspace:include page="/layout/location-bar.jsp" />
+                    <%
+                        }
+                    %>
